@@ -12,13 +12,13 @@
 *, *::after, *::before{ padding: 0;margin: 0;box-sizing: border-box;}
 a{color: inherit;text-decoration: none;}
 ol, ul{list-style: none;}
-img{min-width: 100%; display: block;object-fit: cover;}
+img{max-width: 100%; display: block;object-fit: cover;}
 button{border: none;background: transparent;outline: none;}
 
 html, 
 body{min-height: 100vh; width: 100vw;}
-body{font-family:var(--font-family), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; font-size: 24px; font-weight: 400; color: var(--color-primary); display: flex; flex-direction: column; align-items: center; background: var(--bg-pink);}
-main{flex: 1; width: 100%;}
+body{font-family:var(--font-family), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; font-size: 24px; font-weight: 400; color: var(--color-primary); display: flex; flex-direction: column; align-items: center; background: var(--bg-pink); min-width: 320px; padding-bottom: 64px; overflow-x: hidden;}
+main{flex: 1; width: 100vw;}
 .container{max-width: 1280px; width: 100%; margin: 0 auto;}
 .recipe>.container {padding: 64px;background: var(--bg-white);}
 .recipe-title {font-weight: 700;font-size: 40px;color: var(--color-title);}
@@ -26,7 +26,12 @@ main{flex: 1; width: 100%;}
 .section-title {margin-bottom: 11px;font-weight: 700;font-size: 32px;}
 .section-title > span {font-weight: 400;}
 .ingredients-list, .steps-list {margin-bottom: 32px;}
-.ingredient-item {line-height: 1.33; list-style: disc;margin-left: 22px;}
+.ingredient-item {line-height: 1.33; list-style: disc;margin-left: 25px;}
 .step-item {line-height: 1.33; list-style:auto; margin-left: 25px;}
 .gallery-title{margin-bottom: 20px;}
 .gallery {display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;}
+
+@media(max-width:768px) {
+    body{padding-bottom:0;}
+    .recipe>.container{padding: 64px 32px;} 
+}
