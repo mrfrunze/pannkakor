@@ -24,7 +24,7 @@ main{flex: 1; width: 100vw;}
 .recipe-title {font-weight: 700;font-size: 40px;color: var(--color-title);}
 .description {margin: 32px 0;padding: 32px;background:var(--bg-grey);}
 .section-title {margin-bottom: 11px;font-weight: 700;font-size: 32px;}
-.section-title > span {font-weight: 400;}
+.section-title>span {font-weight: 400;}
 .ingredients-list, .steps-list {margin-bottom: 32px;}
 .ingredient-item {line-height: 1.33; list-style: disc;margin-left: 25px;}
 .step-item {line-height: 1.33; list-style:auto; margin-left: 25px;}
