@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --bg-pink:rgba(161, 0, 0, 0.3);
+    --bg-grey:#ebebeb;
+    --bg-white: #fcfcfc;
+    --font-family: "Open Sans", sans-serif;
+    --color-primary: #000;
+    --color-title: #a10000;
+}
+
+*, *::after, *::before{ padding: 0;margin: 0;box-sizing: border-box;}
+a{color: inherit;text-decoration: none;}
+ol, ul{list-style: none;}
+img{min-width: 100%; display: block;object-fit: cover;}
+button{border: none;background: transparent;outline: none;}
+
+html, 
+body{min-height: 100vh; width: 100vw;}
+body{font-family:var(--font-family), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; font-size: 24px; font-weight: 400; color: var(--color-primary); display: flex; flex-direction: column; align-items: center; background: var(--bg-pink);}
+main{flex: 1; width: 100%;}
+.container{max-width: 1280px; width: 100%; margin: 0 auto;}
+.recipe>.container {padding: 64px;background: var(--bg-white);}
+.recipe-title {font-weight: 700;font-size: 40px;color: var(--color-title);}
+.description {margin: 32px 0;padding: 32px;background:var(--bg-grey);}
+.section-title {margin-bottom: 11px;font-weight: 700;font-size: 32px;}
+.section-title > span {font-weight: 400;}
+.ingredients-list, .steps-list {margin-bottom: 32px;}
+.ingredient-item {line-height: 1.33; list-style: disc;margin-left: 22px;}
+.step-item {line-height: 1.33; list-style:auto; margin-left: 25px;}
+.gallery-title{margin-bottom: 20px;}
+.gallery {display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;}
